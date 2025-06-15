@@ -11,7 +11,7 @@
     </mat-nav-list>
   </mat-sidenav>
 
-  <mat-sidenav-content>
+  <mat-sidenav-content class="bg-sky-50 !h-screen">
 
     <mat-toolbar color="primary" class="!flex !items-center !justify-between shadow-md">
       @if (isHandset$ | async) {
@@ -36,7 +36,7 @@
 
     </mat-toolbar>
 
-    <div class="bottom-div">
+    <div class="bottom-div !h-[90%]">
       <ng-content></ng-content>
     </div>
 

@@ -9,7 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { MatCardModule } from '@angular/material/card';
-import { AppDialog } from "../app-dialog/app-dialog";
 
 @Component({
   selector: 'app-app-navigation',
@@ -23,7 +22,6 @@ import { AppDialog } from "../app-dialog/app-dialog";
     MatIconModule,
     AsyncPipe,
     MatCardModule,
-    AppDialog
 ]
 })
 export class AppNavigationComponent {
