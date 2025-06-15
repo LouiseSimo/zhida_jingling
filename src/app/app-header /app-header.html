@@ -1,5 +1,30 @@
-<div class="flex items-center justify-between p-4 border-b border-gray-200">
-  <button mat-icon-button><mat-icon>close</mat-icon></button>
-  <h1 class="text-base md:text-lg font-semibold">智答精灵</h1>
-  <button mat-icon-button><mat-icon>more_vert</mat-icon></button>
-</div>
+<mat-sidenav-content class="bg-[#f0f9ff] !h-screen !bg-red-900">
+
+  <mat-toolbar color="primary" class="!flex !items-center !justify-between shadow-md">
+    @if (isHandset$ |async) {
+    <div>
+      <button type="button" aria-label="Toggle sidenav" matIconButton (click)="drawer?.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </div>
+    }
+
+    <div>
+      <span class="!text-sm items-center">DeepSeek R1</span>
+      <!-- <mat-icon fontIcon="home"></mat-icon> -->
+    </div>
+
+
+
+    <button class="">
+      <mat-icon fontIcon="home" class="!text-slate-600"></mat-icon>
+    </button>
+
+
+  </mat-toolbar>
+
+  <div class="bottom-div !h-[90%]">
+    <ng-content></ng-content>
+  </div>
+
+</mat-sidenav-content>

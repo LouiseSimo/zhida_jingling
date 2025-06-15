@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { MatCardModule } from '@angular/material/card';
+import { AppHeader } from '../app-header /app-header';
 
 @Component({
   selector: 'app-app-navigation',
@@ -22,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     AsyncPipe,
     MatCardModule,
-]
+    AppHeader
+  ]
 })
 export class AppNavigationComponent {
   private breakpointObserver = inject(BreakpointObserver);
