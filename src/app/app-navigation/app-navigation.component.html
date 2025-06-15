@@ -1,6 +1,6 @@
 <mat-sidenav-container class="sidenav-container !w-full">
 
-  <mat-sidenav #drawer class="sidenav !w-[300px] !md: w-[200px]  !bg-white" fixedInViewport
+  <mat-sidenav #drawer class="sidenav !w-[300px] !lg:w-[200px]!w-[300px]   !bg-white" fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false">
     <mat-toolbar class=" !text-gray-700 w-full m-0 !text-[20px]">最近对话</mat-toolbar>
@@ -8,6 +8,20 @@
        
       <div class="max-h-16 flex flex-grow items-center hover:bg-[#f0f9ff]  justify-around ">
         <img src="/assistant.png" alt="DeepSeek Logo" class="h-12 aspect-square rounded-full bg-[#f0f9ff] hover:bg-white">
+        <div class="h-full flex-1 m-2 p-1  " >
+                <h1 class=" text-sm/6 text-black font-bold">中耳炎症状</h1>
+                <p class="text-gray-400 text-xs">中耳炎诗中耳部位发生的炎症，可分为...</p>
+        </div>
+      </div>
+      <div class="max-h-16  flex flex-grow items-center justify-around hover:bg-[#f0f9ff]">
+        <img src="/dolphin.png" alt="DeepSeek Logo" class="h-10 aspect-square rounded-full bg-[#f0f9ff]">
+        <div class="h-full flex-1 m-2 p-1  " >
+                <h1 class=" text-sm/6 text-black font-bold">中耳炎症状</h1>
+                <p class="text-gray-400 text-xs">中耳炎诗中耳部位发生的炎症，可分为...</p>
+        </div>
+      </div>
+      <div class="max-h-16  flex flex-grow items-center justify-around hover:bg-[#f0f9ff]">
+        <img src="/dolphin.png" alt="DeepSeek Logo" class="h-10 aspect-square rounded-full bg-[#f0f9ff]">
         <div class="h-full flex-1 m-2 p-1  " >
                 <h1 class=" text-sm/6 text-black font-bold">中耳炎症状</h1>
                 <p class="text-gray-400 text-xs">中耳炎诗中耳部位发生的炎症，可分为...</p>
@@ -42,14 +56,11 @@
         <!-- <mat-icon fontIcon="home"></mat-icon> -->
       </div>
 
-
-
       <button class="">
         <mat-icon fontIcon="home" class="!text-slate-600"></mat-icon>
       </button>
-
-
     </mat-toolbar>
+
 
     <div class="bottom-div !h-[90%]">
       <ng-content></ng-content>
